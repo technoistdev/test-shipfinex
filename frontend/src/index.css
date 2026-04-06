@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sfx-bg: #09090b;
+  --color-sfx-card: #18181b;
+  --color-sfx-accent: #3b82f6;
+  --color-sfx-accent-glow: rgba(59, 130, 246, 0.5);
+  --color-sfx-border: #27272a;
+}
+
+body {
+  background-color: var(--color-sfx-bg);
+  color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glass-panel {
+  background: rgba(24, 24, 27, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-sfx-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
